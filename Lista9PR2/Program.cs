@@ -150,6 +150,34 @@ namespace ConsoleApp2
                         
                         
                         
+                        float media = 0;
+            int[] vet2;
+            Console.WriteLine("entre com o tamanho");
+            int t = int.Parse(Console.ReadLine());
+
+            vet2 = new int[t];
+            Random rand = new Random();
+
+            for (int i = 0; i < t; i++)
+            {
+                vet2[i] = rand.Next(10, 50);
+
+
+            }
+            for (int i = 0; i < t; i++)
+            {
+                Console.WriteLine("posição [{0}] = {1}", i, vet2[i]);
+                if(vet2[i] % 3 == 0 && vet2[i] % 5 == 0)
+                {
+                    media = vet2[i] + media;
+                }
+              
+
+            }
+            
+            media = media / (float)t;
+            Console.WriteLine("a media aridimentica é" + media);
+
 
 
                         
