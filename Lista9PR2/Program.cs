@@ -105,43 +105,51 @@ namespace ConsoleApp2
                         break;
 
                     case 3:
-                        int[] vet3;
-                        int h = 0, n, m, b;
-                        int u;
-                        Console.WriteLine("entre com o tamanho");
-                        t = int.Parse(Console.ReadLine());
-                        vet3 = new int[t];
-                        Random random = new Random();
-                        for (int c = 0; c < t; c++)
-                        {
-                            
-                            vet3[c] = random.Next(0, 50);
+                        int[] vet2;
 
-                            n = vet3[c];
+            Console.WriteLine("entre com o tamanho");
 
+            int t = int.Parse(Console.ReadLine());
 
+            vet2 = new int[t];
 
+            Random rand = new Random();
 
-                            if (vet3[c] > n)
-                            {
-                                Console.WriteLine(vet3[c]);
-                                m = vet3[c];
-                            }
-                            else if (vet3[c]> m)
-                            {
+            for (int i = 0; i < t; i++)
 
-                            }
-                          
-                       
-                        }
+            {
 
+                vet2[i] = rand.Next(10, 50);
 
-                        for (int c = 0; c < t; c++)
-                        {
-                            Console.WriteLine("posição[{0}] = {1}", c, vet3[c]);
-                        }
+            }
+
+            for (int i = 0; i < t; i++)
+
+            {
+
+                Console.WriteLine("posição [{0}] = {1}", i, vet2[i]);
+
+               
+
+            }
+
+            Console.WriteLine();
+
+            for (int i = t - 1; i >= 0; i--)
+
+            {
+
+                Console.WriteLine("posição [{0}] = {1}", i, vet2[i]);
+
+            }
                       
 
+                        break;
+                        
+                        case 4:
+                        
+                        
+                        
                         break;
                 }
 
